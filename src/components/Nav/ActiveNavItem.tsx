@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import CustomButton from "../Button/CustomButton";
 import FilterIcon from "../../assets/icons/FilterIcon";
 

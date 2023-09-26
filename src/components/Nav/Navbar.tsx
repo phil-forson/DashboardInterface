@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Button, Spacer, Box, Text } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import NavItem from "./NavItem";
 import ChatIcon from "../../assets/icons/ChatIcon";
 import NavIconItem from "./NavIconItem";
@@ -41,7 +41,6 @@ const Navbar: React.FC<{ isExpanded: boolean }> = ({ isExpanded }) => {
           <NavItem label={item} key={index} />
         ))}
       </Flex>
-      <Spacer />
       <Flex alignItems='center' justifyContent='space-between'>
         {icons.map((icon, index) => (
           <NavIconItem icon={icon.component} hasNotification={icon.hasNotification} key={index}/>

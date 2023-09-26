@@ -54,7 +54,6 @@ const Sidebar: React.FC<{
   isExpanded: boolean;
   setIsExpanded: React.Dispatch<React.SetStateAction<boolean>>;
 }> = ({ isExpanded, setIsExpanded }) => {
-  const [activeItem, setActiveItem] = useState<string | null>(null);
   const [isRotated, setIsRotated] = useState(false);
   const [onMenuIconHovered, setMenuIconHovered] = useState(false);
 
@@ -136,7 +135,7 @@ const Sidebar: React.FC<{
                       <SubItem
                         key={subItem}
                         label={subItem}
-                        onClick={() => setActiveItem(subItem)}
+                        onClick={() => console.log(subItem)}
                       />
                     ))}
                   </VStack>

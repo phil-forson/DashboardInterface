@@ -27,32 +27,27 @@
   src: url('./assets/fonts/Poppins/Poppins-Light.ttf');
 }
 
-/* This is for the scrollbar track */
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
   margin: 0px 5px
 }
 
-/* This is for the draggable scrolling handle */
 ::-webkit-scrollbar-thumb {
-  background: #52527a; /* Color of the scroll thumb */
+  background: #52527a; 
 }
 
-/* On hover, make the thumb a bit darker */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
-/* This is for the buttons on the scrollbar (up and down arrows) */
 ::-webkit-scrollbar-button {
-  display: none; /* Hide the buttons */
+  display: none;
 }
 
-/* This is for the track of the scrollbar */
 ::-webkit-scrollbar-track {
-  background: 'transparent'; /* Color of the track */
-  border-radius: 5px; /* Rounded corners on the track */
+  background: 'transparent'; 
+  border-radius: 5px; 
 }
 
 @keyframes animationBlink {
