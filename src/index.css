@@ -1,11 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PoppinsRegular';
+  font-family: 'PoppinsMedium';
+  font-size: 13px;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: PoppinsRegular;
   src: url('./assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: PoppinsMedium;
+  src: url('./assets/fonts/Poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: PoppinsLight;
+  src: url('./assets/fonts/Poppins/Poppins-Light.ttf');
+}
+
+/* This is for the scrollbar track */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  margin: 0px 5px
+}
+
+/* This is for the draggable scrolling handle */
+::-webkit-scrollbar-thumb {
+  background: #52527a; /* Color of the scroll thumb */
+}
+
+/* On hover, make the thumb a bit darker */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* This is for the buttons on the scrollbar (up and down arrows) */
+::-webkit-scrollbar-button {
+  display: none; /* Hide the buttons */
+}
+
+/* This is for the track of the scrollbar */
+::-webkit-scrollbar-track {
+  background: 'transparent'; /* Color of the track */
+  border-radius: 5px; /* Rounded corners on the track */
+}
+
+@keyframes animationBlink {
+  100% {
+    visibility: hidden;
+  }
 }
