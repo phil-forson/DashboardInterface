@@ -17,7 +17,7 @@ const ActiveNavItem: React.FC<ActiveNavItemProps> = ({
       pl={8}
       bg="dark.200"
       position={"sticky"}
-      top={0}
+      top={65}
       marginLeft={isExpanded ? "265px" : "80px"}
       transition="margin-left 0.3s"
       height={65}
@@ -25,7 +25,7 @@ const ActiveNavItem: React.FC<ActiveNavItemProps> = ({
       justifyContent="space-between"
       flexDirection={"row"}
     >
-      <Text color="white" textTransform={"capitalize"} fontSize={"1.35rem"}>
+      <Text color="white" textTransform={"capitalize"} fontSize={"1.35rem"} fontFamily={"PoppinsBold"}>
         {activeLabel}
       </Text>
       <Flex>

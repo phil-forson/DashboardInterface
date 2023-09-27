@@ -2,39 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PoppinsMedium';
+  font-family: "PoppinsMedium";
   font-size: 13px;
   font-weight: 400;
 }
 
 @font-face {
+  font-family: PoppinsBold;
+  src: url("./assets/fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
   font-family: PoppinsRegular;
-  src: url('./assets/fonts/Poppins/Poppins-Regular.ttf');
+  src: url("./assets/fonts/Poppins/Poppins-Regular.ttf");
 }
 
 @font-face {
   font-family: PoppinsMedium;
-  src: url('./assets/fonts/Poppins/Poppins-Medium.ttf');
+  src: url("./assets/fonts/Poppins/Poppins-Medium.ttf");
 }
 
 @font-face {
   font-family: PoppinsLight;
-  src: url('./assets/fonts/Poppins/Poppins-Light.ttf');
+  src: url("./assets/fonts/Poppins/Poppins-Light.ttf");
 }
 
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
-  margin: 0px 5px
+  margin: 0px 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #52527a; 
+  background: #52527a;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -46,12 +50,22 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: 'transparent'; 
-  border-radius: 5px; 
+  background: "transparent";
+  border-radius: 5px;
 }
 
 @keyframes animationBlink {
   100% {
     visibility: hidden;
   }
+}
+
+.apexcharts-tooltip {
+  background: #1a1a27 !important;
+  border: 0 !important;
+}
+
+.apexcharts-tooltip-title {
+  background-color: #1e1e2d !important;
+  border: 1px solid #1a1a27 !important
 }
