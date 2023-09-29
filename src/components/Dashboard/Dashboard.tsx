@@ -1,5 +1,8 @@
-import { Box, Center, Container, Flex, Grid, GridItem } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import SalesStatistics from "./SalesStatistics";
+import Activities from "./Activities";
+import FinanceReports from "./FinanceReports";
+import SalesReport from "./SalesReport";
 
 const Dashboard: React.FC<{ isExpanded: boolean }> = ({ isExpanded }) => {
   return (
@@ -11,12 +14,15 @@ const Dashboard: React.FC<{ isExpanded: boolean }> = ({ isExpanded }) => {
       marginLeft={isExpanded ? "265px" : "80px"}
       transition="margin-left 0.3s"
       position={"static"}
-      className="gap-x-6"
+      gap={"1.5rem"}
     >
       <Flex gap={"2rem"} margin={"auto"} width={"1210px"}>
         <SalesStatistics />
-        <SalesStatistics />
-        <SalesStatistics />
+        <Activities />
+        <Flex flexDir={"column"} gap={"2rem"}>
+          <FinanceReports />
+          <SalesReport />
+        </Flex>
       </Flex>
 
       <Flex gap={"2rem"} margin={"auto"} width={"1210px"}>

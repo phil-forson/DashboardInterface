@@ -132,21 +132,7 @@ const SalesStatistics = () => {
     },
   ]);
   return (
-    <CustomCard bg={"sysred.100"} color={"white"} className="rounded-t-lg" >
-      <CardHeader
-        display={"flex"}
-        justifyContent={"space-between"}
-        alignItems="stretch"
-        padding={"1.25rem 2.25rem"}
-        marginTop={4}
-        flexWrap={"wrap"}
-        bg={"sysred.100"}
-      >
-        <Text fontSize={"1.275rem"} fontWeight={500} fontFamily={"PoppinsBold"}>
-          Sales Statistics
-        </Text>
-        <WidgetIcon />
-      </CardHeader>
+    <CustomCard bg={"sysred.100"} color={"white"} headerText="Sales Statistics">
       <CardBody padding={0} bg={"dark.200"}>
         <Box
           id="chart"

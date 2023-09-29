@@ -63,6 +63,7 @@
 .apexcharts-tooltip {
   background: #1a1a27 !important;
   border: 0 !important;
+  color: white !important;
 }
 
 .apexcharts-tooltip-title {

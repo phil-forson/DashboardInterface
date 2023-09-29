@@ -8,9 +8,8 @@ import ChartIcon from "../../assets/icons/ChartIcon";
 import PagesIcon from "../../assets/icons/PagesIcon";
 import WidgetIcon from "../../assets/icons/WidgetsIcon";
 import DarkModeIcon from "../../assets/icons/DarkModeIcon";
-import AvatarIcon from "../../assets/avatars/300-1.jpg"
+import AvatarIcon from "../../assets/avatars/300-1.jpg";
 import Avatar from "./Avatar";
-
 
 const Navbar: React.FC<{ isExpanded: boolean }> = ({ isExpanded }) => {
   const navItems = ["Dashboard", "LayoutBuilder", "Crafted", "Apps"];
@@ -33,20 +32,24 @@ const Navbar: React.FC<{ isExpanded: boolean }> = ({ isExpanded }) => {
       marginLeft={isExpanded ? "265px" : "80px"}
       transition="margin-left 0.3s"
       height={65}
-      position={'sticky'}
+      position={"sticky"}
       top={0}
+      zIndex={1000}
     >
       <Flex alignItems="center" justifyContent="space-between">
         {navItems.map((item, index) => (
           <NavItem label={item} key={index} />
         ))}
       </Flex>
-      <Flex alignItems='center' justifyContent='space-between'>
+      <Flex alignItems="center" justifyContent="space-between">
         {icons.map((icon, index) => (
-          <NavIconItem icon={icon.component} hasNotification={icon.hasNotification} key={index}/>
+          <NavIconItem
+            icon={icon.component}
+            hasNotification={icon.hasNotification}
+            key={index}
+          />
         ))}
         <Avatar src={AvatarIcon} alt="User Avatar" />
-
       </Flex>
     </Flex>
   );
