@@ -1,17 +1,22 @@
-import { CardBody } from "@chakra-ui/react";
+import { CardBody, Flex } from "@chakra-ui/react";
 import CustomCard from "../../CustomCard/CustomCard";
 import Row from "./Row";
+import { data } from "./TodoData";
 
 const Todo = () => {
   return (
     <CustomCard headerText="Todo">
       <CardBody padding={"1.25rem 2.25rem"}>
-        <Row
-          bgColor="#1c3238"
-          textColor="#50cd89"
-          text="Create Firestone Logo"
-          dueDate="2"
-        />
+        <Flex flexDir={"column"} gap={7}>
+          {data.map((data) => (
+            <Row
+              text={data.text}
+              dueDays={data.dueDays}
+              bgColor={data.bgColor}
+              textColor={data.textColor}
+            />
+          ))}
+        </Flex>
       </CardBody>
     </CustomCard>
   );
