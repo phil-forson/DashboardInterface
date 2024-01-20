@@ -14,7 +14,7 @@ const DashboardPage = () => {
       <Box flex="1" bg="gray.100">
         <Navbar isExpanded={isExpanded} />
         <ActiveNavItem activeLabel="Dashboard" isExpanded={isExpanded} />
-        <Dashboard isExpanded={isExpanded}/>
+        <Dashboard isExpanded={isExpanded} />
       </Box>
     </>
   );

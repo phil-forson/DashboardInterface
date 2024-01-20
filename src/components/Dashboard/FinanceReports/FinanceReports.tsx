@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import CustomCard from "../CustomCard/CustomCard";
-import { Box, CardBody, Flex, Text } from "@chakra-ui/react";
+import { useState } from "react";
+import CustomCard from "../../CustomCard/CustomCard";
+import { Box, CardBody, Text } from "@chakra-ui/react";
 import ReactApexChart from "react-apexcharts";
 import { ApexOptions } from "apexcharts";
 
@@ -16,7 +16,7 @@ const FinanceReports = () => {
       fontFamily: "inherit",
       type: "area",
       height: 150,
-      width: 'full',
+      width: 381,
       toolbar: {
         show: false,
       },

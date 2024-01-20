@@ -1,7 +1,6 @@
-import CustomCard from "../CustomCard/CustomCard";
-import { Box, CardBody, CardHeader, Flex, Text } from "@chakra-ui/react";
-import WidgetIcon from "../../assets/icons/WidgetsIcon";
-import Timeline from "../Timeline/Timeline";
+import CustomCard from "../../CustomCard/CustomCard";
+import { CardBody } from "@chakra-ui/react";
+import Timeline from "../../Timeline/Timeline";
 
 const Activities = () => {
   const timelineData = [
@@ -61,8 +60,12 @@ const Activities = () => {
     },
   ];
   return (
-    <CustomCard bg="dark.100" marginBottom={10} headerText="Activities" headerSubtext="890,344 Sales">
-      
+    <CustomCard
+      bg="dark.100"
+      marginBottom={10}
+      headerText="Activities"
+      headerSubtext="890,344 Sales"
+    >
       <CardBody paddingTop={2} paddingInline={"2.25rem"}>
         <Timeline timelineData={timelineData} />
       </CardBody>

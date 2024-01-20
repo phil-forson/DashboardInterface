@@ -1,8 +1,8 @@
 import { Flex } from "@chakra-ui/react";
-import SalesStatistics from "./SalesStatistics";
-import Activities from "./Activities";
-import FinanceReports from "./FinanceReports";
-import SalesReport from "./SalesReport";
+import SalesStatistics from "./SalesStatistics/SalesStatistics";
+import Activities from "./Activities/Activities";
+import FinanceReports from "./FinanceReports/FinanceReports";
+import SalesReport from "./SalesReport/SalesReport";
 
 const Dashboard: React.FC<{ isExpanded: boolean }> = ({ isExpanded }) => {
   return (
