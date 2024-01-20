@@ -5,7 +5,7 @@ import Row from "./Row";
 const Todo = () => {
   return (
     <CustomCard headerText="Todo">
-      <CardBody>
+      <CardBody padding={"1.25rem 2.25rem"}>
         <Row
           bgColor="#1c3238"
           textColor="#50cd89"

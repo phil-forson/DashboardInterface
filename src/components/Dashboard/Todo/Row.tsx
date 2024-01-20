@@ -1,4 +1,4 @@
-import { Checkbox, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import Badge from "../../Badge/Badge";
 
 type Props = {
@@ -10,15 +10,23 @@ type Props = {
 const Row: React.FC<Props> = ({ bgColor, textColor, dueDate, text }) => {
   return (
     <Flex
-      borderLeft={`3px solid ${textColor}`}
       color={"white"}
-      pl={5}
       justifyContent={"space-between"}
       width={"100%"}
       alignItems={"center"}
     >
-      <Flex justifyContent={"space-between"} >
-        <Checkbox size={"lg"} pr={"2rem"} iconSize={"1rem"}></Checkbox>
+      <Flex justifyContent={"space-between"}>
+        <Box
+          as="span"
+          height={"40px"}
+          width={1}
+          bgColor={textColor}
+          borderRadius={8}
+          mr={"2rem"}
+        ></Box>
+        <Flex justify={"center"} align={"center"} pr={"2rem"}>
+          <input type="checkbox" className="form-check-input" />
+        </Flex>
         <Flex flexDir={"column"}>
           <Text fontSize={15} fontFamily={"PoppinsBold"}>
             {text}
