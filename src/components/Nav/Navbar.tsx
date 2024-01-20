@@ -9,7 +9,7 @@ import PagesIcon from "../../assets/icons/PagesIcon";
 import WidgetIcon from "../../assets/icons/WidgetsIcon";
 import DarkModeIcon from "../../assets/icons/DarkModeIcon";
 import AvatarIcon from "../../assets/avatars/300-1.jpg";
-import Avatar from "./Avatar";
+import Avatar from "../Avatar/Avatar";
 
 const Navbar: React.FC<{ isExpanded: boolean }> = ({ isExpanded }) => {
   const navItems = ["Dashboard", "LayoutBuilder", "Crafted", "Apps"];

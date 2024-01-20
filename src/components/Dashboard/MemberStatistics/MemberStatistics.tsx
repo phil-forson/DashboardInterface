@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, CardBody, Text } from "@chakra-ui/react";
 import CustomCard from "../../CustomCard/CustomCard";
 import CustomButton from "../../Button/CustomButton";
 import { FaPlus } from "react-icons/fa";
@@ -29,7 +29,9 @@ const MemberStatistics = () => {
         ></CustomButton>
       }
     >
-      <CustomTable />
+      <CardBody padding={"1.25rem 2.25rem"}>
+        <CustomTable />
+      </CardBody>
     </CustomCard>
   );
 };
