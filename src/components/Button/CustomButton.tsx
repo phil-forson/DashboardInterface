@@ -1,22 +1,30 @@
 import React, { useState } from "react";
-import { Button, Text } from "@chakra-ui/react";
+import { Button, ButtonProps, Text } from "@chakra-ui/react";
 
-const CustomButton: React.FC<{
+type Props = {
   label: string;
   onClick?: () => void;
   className?: string;
   textClassName?: string;
+  bgColor?: string;
   bgColorHover?: string;
   textColorHover?: string;
   icon?: React.ReactElement;
-}> = ({
+  iconColor?: string;
+  cloneIcon?: boolean;
+} & ButtonProps;
+const CustomButton: React.FC<Props> = ({
   label,
   onClick,
   className,
   textClassName,
+  bgColor,
   bgColorHover,
   icon,
   textColorHover,
+  iconColor,
+  cloneIcon = true,
+  ...rest
 }) => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
@@ -29,14 +37,20 @@ const CustomButton: React.FC<{
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       fontFamily={"PoppinsRegular"}
-      className={className}
-      transition={"all 0.5s"}
+      bgColor={bgColor}
+      transition={"background-color 0.5s"}
       leftIcon={
-        icon &&
-        React.cloneElement(icon, {
-          fill: isHovered ? "#fff" : "#494b74",
-        })
+        cloneIcon
+          ? icon &&
+            React.cloneElement(icon, {
+              fill: iconColor ? iconColor : isHovered ? "#fff" : "#494b74",
+            })
+          : icon
       }
+      {...rest}
+      _active={{
+        bgColor: bgColor,
+      }}
     >
       <Text
         className={textClassName}

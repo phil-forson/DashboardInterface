@@ -14,6 +14,7 @@ const theme = extendTheme({
         },
         sysblue: {
             100 : '#009ef7',
+            200: '#212e48'
         },
         sysgray: {
             100: '#CDCDDE',

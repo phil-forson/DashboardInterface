@@ -26,7 +26,12 @@ const ActiveNavItem: React.FC<ActiveNavItemProps> = ({
       flexDirection={"row"}
       zIndex={1000}
     >
-      <Text color="white" textTransform={"capitalize"} fontSize={"1.35rem"} fontFamily={"PoppinsBold"}>
+      <Text
+        color="white"
+        textTransform={"capitalize"}
+        fontSize={"1.35rem"}
+        fontFamily={"PoppinsBold"}
+      >
         {activeLabel}
       </Text>
       <Flex>
@@ -41,7 +46,12 @@ const ActiveNavItem: React.FC<ActiveNavItemProps> = ({
         <CustomButton
           label="Create"
           textClassName="text-white"
-          className="bg-mainBlue py-6 text-white "
+          bgColor={"sysblue.100"}
+          py={6}
+          textColor={"white"}
+          _active={{
+            bgColor: "sysblue.100",
+          }}
         />
       </Flex>
     </Flex>

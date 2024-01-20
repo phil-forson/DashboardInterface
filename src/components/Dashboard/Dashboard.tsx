@@ -4,6 +4,7 @@ import Activities from "./Activities/Activities";
 import FinanceReports from "./FinanceReports/FinanceReports";
 import SalesReport from "./SalesReport/SalesReport";
 import Todo from "./Todo/Todo";
+import MemberStatistics from "./MemberStatistics/MemberStatistics";
 
 const Dashboard: React.FC<{ isExpanded: boolean }> = ({ isExpanded }) => {
   return (
@@ -29,6 +30,9 @@ const Dashboard: React.FC<{ isExpanded: boolean }> = ({ isExpanded }) => {
       </GridItem>
       <GridItem>
         <Todo />
+      </GridItem>
+      <GridItem colSpan={2}>
+        <MemberStatistics />
       </GridItem>
     </Grid>
   );
