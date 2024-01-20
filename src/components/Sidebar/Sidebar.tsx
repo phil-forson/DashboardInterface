@@ -77,7 +77,6 @@ const Sidebar: React.FC<{
       color="white"
       transition="width 0.3s"
     >
-      {/* ... (Menu Icon and Codie Text) ... */}
       <Box
         onClick={handleSidebarToggle}
         width="full"
@@ -94,7 +93,7 @@ const Sidebar: React.FC<{
           onMouseEnter={() => setMenuIconHovered(true)}
           onMouseLeave={() => setMenuIconHovered(false)}
           padding={0}
-          onClick={handleRotate} // Add the onClick handler here
+          onClick={handleRotate} 
           bg={"transparent"}
           _hover={{ bg: "transparent" }}
           justifyContent={"flex-end"}
