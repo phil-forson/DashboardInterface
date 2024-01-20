@@ -29,7 +29,6 @@ const SalesReport = () => {
           $15,300
         </Text>
       }
-      bg="dark.100"
     >
       <CardBody>
         <ReactApexChart

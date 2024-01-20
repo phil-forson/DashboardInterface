@@ -21,10 +21,11 @@ const SalesStatistics = () => {
   ]);
   return (
     <CustomCard bg={"sysred.100"} color={"white"} headerText="Sales Statistics">
-      <CardBody padding={0} bg={"dark.200"}>
+      <CardBody padding={0} bg={"dark.200"} borderBottomRadius={8}>
         <Box
           id="chart"
           height={200}
+          padding={0}
           bg={"sysred.100"}
           className="block rounded-b-lg"
         >

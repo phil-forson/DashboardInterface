@@ -28,10 +28,9 @@ const FinanceReports = () => {
           $24,500
         </Text>
       }
-      bg="dark.100"
     >
       <CardBody padding={0}>
-        <Box id="chart">
+        <Box id="chart" borderRadius="8px 8px 0 0">
           <ReactApexChart
             options={options}
             series={series}

@@ -5,6 +5,7 @@ type CustomCardProps = {
   headerText: string;
   headerSubtext?: string;
   headerRightComponent?: React.ReactElement;
+  cardBgColor?: string;
   children: React.ReactNode;
 } & BoxProps;
 
@@ -12,6 +13,7 @@ const CustomCard: React.FC<CustomCardProps> = ({
   headerText,
   headerRightComponent,
   headerSubtext,
+  cardBgColor,
   children,
   ...rest
 }) => {
@@ -21,6 +23,7 @@ const CustomCard: React.FC<CustomCardProps> = ({
       flex={1}
       borderRadius={13}
       padding={0}
+      bgColor={cardBgColor ?? "dark.100"}
       {...rest}
     >
       <CardHeader
