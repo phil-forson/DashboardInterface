@@ -1,6 +1,5 @@
-import { Box, Checkbox, Flex, Text } from "@chakra-ui/react";
+import { Checkbox, Flex, Text } from "@chakra-ui/react";
 import Badge from "../../Badge/Badge";
-import AvatarSmall from "../../Avatar/Small/AvatarSmall";
 
 type Props = {
   bgColor?: string;
