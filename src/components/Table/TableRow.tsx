@@ -3,10 +3,12 @@ import { ICompanyUser } from "../Dashboard/MemberStatistics/MemberData";
 import CustomTableBox from "./TableHeaderBox";
 import Avatar from "../Avatar/Avatar";
 import Checkbox from "../Checkbox/Checkbox";
+import ProgressBar from "../ProgressBar/ProgressBar";
+import CustomButton from "../Button/CustomButton";
 
 const TableRow: React.FC<{ data: ICompanyUser }> = ({ data }) => {
   return (
-    <Tr>
+    <Tr borderBottomWidth={1} borderStyle={"dashed"} borderColor={"dark.300"}>
       <CustomTableBox>
         <Checkbox />
       </CustomTableBox>
@@ -42,6 +44,27 @@ const TableRow: React.FC<{ data: ICompanyUser }> = ({ data }) => {
             {data.books.join(",")}
           </Text>
         </Flex>
+      </CustomTableBox>
+      <CustomTableBox>
+        <Flex flexDir={"column"} gap={2}>
+          <Text
+            textTransform={"capitalize"}
+            fontWeight={"600"}
+            fontFamily={"PoppinsBold"}
+            color={"white"}
+          >
+            {data.progress}%
+          </Text>
+          <ProgressBar
+            progress={data.progress}
+            progressColor={data.progressColor}
+          />
+        </Flex>
+      </CustomTableBox>
+      <CustomTableBox>
+        <CustomButton>
+            
+        </CustomButton>
       </CustomTableBox>
     </Tr>
   );

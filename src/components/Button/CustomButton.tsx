@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, ButtonProps, Text } from "@chakra-ui/react";
 
 type Props = {
-  label: string;
+  label?: string;
   onClick?: () => void;
   className?: string;
   textClassName?: string;
