@@ -1,4 +1,4 @@
-import { Box, CardBody, Text } from "@chakra-ui/react";
+import { Box, CardBody } from "@chakra-ui/react";
 
 import { FaPlus } from "react-icons/fa";
 import CustomCard from "../../../components/CustomCard/CustomCard";
