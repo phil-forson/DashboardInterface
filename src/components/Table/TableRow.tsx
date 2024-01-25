@@ -1,7 +1,7 @@
-import { Flex,  Text, Tr } from "@chakra-ui/react";
+import { Flex, Text, Th, Tr } from "@chakra-ui/react";
 import CustomTableBox from "./TableHeaderBox";
 import Avatar from "../Avatar/Avatar";
-import AvatarIcon from "../../assets/avatars/300-1.jpg"
+import AvatarIcon from "../../assets/avatars/300-1.jpg";
 import Checkbox from "../Checkbox/Checkbox";
 import ProgressBar from "../ProgressBar/ProgressBar";
 import { ICompanyUser } from "../../models/Dashboard/MemberStatistics/MemberData";
@@ -11,7 +11,12 @@ import TableAction from "./TableAction";
 
 const TableRow: React.FC<{ data: ICompanyUser }> = ({ data }) => {
   return (
-    <Tr borderBottomWidth={1} borderStyle={"dashed"} borderColor={"dark.300"} py={20}>
+    <Tr
+      borderBottomWidth={1}
+      borderStyle={"dashed"}
+      borderColor={"dark.300"}
+      height={24}
+    >
       <CustomTableBox>
         <Checkbox />
       </CustomTableBox>
@@ -64,13 +69,13 @@ const TableRow: React.FC<{ data: ICompanyUser }> = ({ data }) => {
           />
         </Flex>
       </CustomTableBox>
-      <CustomTableBox>
-        <Flex justifySelf={"flex-end"}>
+      <Th paddingRight={0}>
+        <Flex justifyContent={"flex-end"} gap={1} paddingRight={0}>
           {actions.map((action) => (
-            <TableAction action={action}/>
+            <TableAction action={action} />
           ))}
         </Flex>
-      </CustomTableBox>
+      </Th>
     </Tr>
   );
 };

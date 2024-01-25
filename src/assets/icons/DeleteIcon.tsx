@@ -1,11 +1,13 @@
-const DeleteIcon: React.FC<{ className?: string; fill?: string }> = ({
-  className,
-  fill,
-}) => {
+const DeleteIcon: React.FC<{
+  className?: string;
+  fill?: string;
+  width?: number;
+  height?: number;
+}> = ({ className, fill, width, height }) => {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width ?? "24"}
+      height={height ?? "24"}
       viewBox="0 0 24 24"
       color={fill}
       className={className}

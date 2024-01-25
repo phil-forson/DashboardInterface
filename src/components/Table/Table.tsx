@@ -1,11 +1,4 @@
-import {
-  TableContainer,
-  Table,
-  Thead,
-  Tr,
-  Th,
-  Tbody,
-} from "@chakra-ui/react";
+import { TableContainer, Table, Thead, Tr, Th, Tbody, Flex } from "@chakra-ui/react";
 import Checkbox from "../Checkbox/Checkbox";
 import CustomTableHeaderText from "./TableHeaderText";
 import CustomTableBox from "./TableHeaderBox";
@@ -37,13 +30,16 @@ const CustomTable = () => {
               <CustomTableHeaderText>Progress</CustomTableHeaderText>
             </CustomTableBox>
             <Th pr={0}>
+              <Flex justifyContent={"flex-end"} width={"full"}>
               <CustomTableHeaderText>Actions</CustomTableHeaderText>
-            </Th>
+
+              </Flex>
+            </Th >
           </Tr>
         </Thead>
         <Tbody>
           {data.map((data) => (
-            <TableRow data={data}/>
+            <TableRow data={data} />
           ))}
         </Tbody>
       </Table>

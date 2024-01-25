@@ -4,13 +4,15 @@ type Props = {
   className?: string;
   onClick?: () => void;
   fill?: string;
+  width?: number,
+  height?: number
 };
 
-const ToggleIcon: React.FC<Props> = ({ className, onClick, fill }) => {
+const ToggleIcon: React.FC<Props> = ({ className, onClick, fill, width, height }) => {
   return (
     <svg
-      width="20"
-      height="20"
+    width={width ?? "20"}
+    height={height ?? "20"}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
