@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Box, CardBody, Flex } from "@chakra-ui/react";
-import CustomCard from "../../CustomCard/CustomCard";
 import ReactApexChart from "react-apexcharts";
 import { ApexOptions } from "apexcharts";
 import ChartIcon from "../../../assets/icons/ChartIcon";
@@ -9,6 +8,7 @@ import FolderIcon from "../../../assets/icons/FolderIcon";
 import OrdersIcon from "../../../assets/icons/OrdersIcon";
 import Card from "./Card";
 import { chartOptions } from "./ChartOptions";
+import CustomCard from "../../../components/CustomCard/CustomCard";
 
 const SalesStatistics = () => {
   const [options] = useState<ApexOptions>(chartOptions);

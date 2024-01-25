@@ -1,7 +1,7 @@
 import { CardBody, Flex } from "@chakra-ui/react";
-import CustomCard from "../../CustomCard/CustomCard";
 import Row from "./Row";
 import { data } from "./TodoData";
+import CustomCard from "../../../components/CustomCard/CustomCard";
 
 const Todo = () => {
   return (

@@ -1,9 +1,9 @@
 import { useState } from "react";
-import CustomCard from "../../CustomCard/CustomCard";
 import { Box, CardBody, Text } from "@chakra-ui/react";
 import ReactApexChart from "react-apexcharts";
 import { ApexOptions } from "apexcharts";
 import { chartOptions } from "./ChartOptions";
+import CustomCard from "../../../components/CustomCard/CustomCard";
 
 const FinanceReports = () => {
   const [options] = useState<ApexOptions>(chartOptions);

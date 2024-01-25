@@ -4,18 +4,13 @@ import {
   Thead,
   Tr,
   Th,
-  Text,
   Tbody,
-  Td,
-  GenericAvatarIcon,
-  Flex,
 } from "@chakra-ui/react";
 import Checkbox from "../Checkbox/Checkbox";
 import CustomTableHeaderText from "./TableHeaderText";
 import CustomTableBox from "./TableHeaderBox";
-import { data } from "../Dashboard/MemberStatistics/MemberData";
-import Avatar from "../Avatar/Avatar";
 import TableRow from "./TableRow";
+import { data } from "../../models/Dashboard/MemberStatistics/MemberData";
 
 const CustomTable = () => {
   return (

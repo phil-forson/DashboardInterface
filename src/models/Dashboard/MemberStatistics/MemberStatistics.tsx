@@ -1,8 +1,9 @@
 import { Box, CardBody, Text } from "@chakra-ui/react";
-import CustomCard from "../../CustomCard/CustomCard";
-import CustomButton from "../../Button/CustomButton";
+
 import { FaPlus } from "react-icons/fa";
-import CustomTable from "../../Table/Table";
+import CustomCard from "../../../components/CustomCard/CustomCard";
+import CustomButton from "../../../components/Button/CustomButton";
+import CustomTable from "../../../components/Table/Table";
 
 const MemberStatistics = () => {
   return (

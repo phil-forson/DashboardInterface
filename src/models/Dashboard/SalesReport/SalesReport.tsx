@@ -1,8 +1,8 @@
 import { useState } from "react";
-import CustomCard from "../../CustomCard/CustomCard";
 import { CardBody, Text } from "@chakra-ui/react";
 import ReactApexChart from "react-apexcharts";
 import { chartOptions } from "./ChartOptions";
+import CustomCard from "../../../components/CustomCard/CustomCard";
 
 const SalesReport = () => {
   const [series] = useState([

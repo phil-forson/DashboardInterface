@@ -1,7 +1,7 @@
-import CustomCard from "../../CustomCard/CustomCard";
 import { CardBody } from "@chakra-ui/react";
-import Timeline from "../../Timeline/Timeline";
 import { timelineData } from "./TimelineData";
+import CustomCard from "../../../components/CustomCard/CustomCard";
+import Timeline from "../../../components/Timeline/Timeline";
 
 const Activities = () => {
  
