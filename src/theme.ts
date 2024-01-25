@@ -22,6 +22,9 @@ const theme = extendTheme({
         },
         sysred: {
             100: "#f1416c"
+        },
+        sysgreen: {
+            100: "#50cd89"
         }
     }
 })

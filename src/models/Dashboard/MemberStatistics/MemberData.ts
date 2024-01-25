@@ -23,4 +23,12 @@ export const data: ICompanyUser[] = [
     progress: 70,
     progressColor: "sysred.100",
   },
+  {
+    name: "Max Ryan Asiedu Gyekye",
+    books: ["Java", "PHP"],
+    companyName: "Prudential Bank",
+    departments: ["IT Department"],
+    progress: 20,
+    progressColor: "sysgreen.100",
+  },
 ];

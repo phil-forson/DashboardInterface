@@ -45,13 +45,15 @@ const CustomButton: React.FC<Props> = ({
             React.cloneElement(icon, {
               fill: iconColor ? iconColor : isHovered ? "#fff" : "#494b74",
             })
-          : icon
+            : undefined
       }
       {...rest}
       _active={{
         bgColor: bgColor,
       }}
+      
     >
+      {icon && !cloneIcon && (icon)}
       <Text
         className={textClassName}
         textColor={isHovered ? textColorHover : ""}
